@@ -100,6 +100,8 @@ h1 {
 /* Index-Main */
 
 main {
+    overflow: hidden;
+    padding: 0 10%;
     width: 80%;
 }
 #lisgear-products-list{
@@ -122,7 +124,8 @@ footer {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow: hidden;
+    height: 72px;
+    clear: both;
 }
 
 .social {
@@ -188,7 +191,18 @@ footer {
     width: 112px;
     border-radius: 12px;
     left: -32px;
-    top: -6px;
+    top: -36px;
+    opacity: 0;
+    /*noinspection CssUnknownProperty*/
+    -webkit-clip-path: circle(0% at 50% 150%);
+    clip-path: circle(0% at 50% 150%);
+    transition: -webkit-clip-path 0.2s, clip-path 0.2s, opacity 0.2s;
+}
+.snapchat:hover:after {
+    /*noinspection CssUnknownProperty*/
+    -webkit-clip-path: circle(100% at center);
+    clip-path: circle(100% at center);
+    opacity: 1;
 }
 
 .copyright {
