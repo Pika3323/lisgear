@@ -90,7 +90,9 @@ h1 {
     height: calc(100% - 112px);
     background: #0b254f url("images/header.jpg") no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) inset;
 }
 
 
@@ -162,6 +164,26 @@ footer {
 
 .snapchat:hover {
     color: #fffa37;
+}
+
+.snapchat {
+    position: relative;
+}
+
+.snapchat:after {
+    content: 'lisgarstudco';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    padding: 8px 0;
+    width: 112px;
+    border-radius: 12px;
+    left: -32px;
+    top: -6px;
 }
 
 .copyright {
