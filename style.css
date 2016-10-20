@@ -18,6 +18,11 @@ html {
     background: #0b254f;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Navigation */
 nav {
     width: 100%;
@@ -50,10 +55,13 @@ nav ul li {
     letter-spacing: 2px;
     cursor: pointer;
 }
+.selected {
+    font-weight: bold;
+}
 nav ul li:after {
     display: block;
     content: ' ';
-    border-bottom: solid 2px #212121;
+    border-bottom: solid 1px #212121;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
     padding: 0 16px;
@@ -85,7 +93,9 @@ h1 {
     height: calc(100% - 112px);
     background: #0b254f url("images/header.jpg") no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) inset;
 }
 
 
@@ -93,6 +103,8 @@ h1 {
 /* Index-Main */
 
 main {
+    overflow: hidden;
+    padding: 0 10%;
     width: 80%;
 }
 #lisgear-products-list{
@@ -116,7 +128,8 @@ footer {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow: hidden;
+    height: 80px;
+    clear: both;
 }
 
 .social {
@@ -143,6 +156,12 @@ footer {
     transition: color 0.1s ease-in-out;
 }
 
+.social li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .twitter:hover {
     color: #4da7de;
 }
@@ -157,6 +176,37 @@ footer {
 
 .snapchat:hover {
     color: #fffa37;
+}
+
+.snapchat {
+    position: relative;
+}
+
+.snapchat:after {
+    content: 'lisgarstudco';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    padding: 8px 0;
+    width: 112px;
+    border-radius: 12px;
+    left: -32px;
+    top: -36px;
+    opacity: 0;
+    /*noinspection CssUnknownProperty*/
+    -webkit-clip-path: circle(0% at 50% 150%);
+    clip-path: circle(0% at 50% 150%);
+    transition: -webkit-clip-path 0.2s, clip-path 0.2s, opacity 0.2s;
+}
+.snapchat:hover:after {
+    /*noinspection CssUnknownProperty*/
+    -webkit-clip-path: circle(100% at center);
+    clip-path: circle(100% at center);
+    opacity: 1;
 }
 
 .copyright {
