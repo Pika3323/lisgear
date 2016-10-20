@@ -65,16 +65,25 @@ nav ul li:hover:after {
 /* Header */
 header {
     width: 100%;
-    height: 60%;
+    height: 70%;
 }
 
 h1 {
     margin: 0;
     text-align: center;
-    font-size: 64px;
+    font-size: 85px;
     font-weight: 400;
+    color: #ffffff;
+    height: 112px;
+    position: absolute;
+    top: calc(50% - 56px);
+    width: 100%;
+    font-family: Sanchez, sans-serif;
 }
 
 .header-image {
     height: calc(100% - 112px);
+    background: #0b254f url("images/header.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
 }
