@@ -55,10 +55,13 @@ nav ul li {
     letter-spacing: 2px;
     cursor: pointer;
 }
+.selected {
+    font-weight: bold;
+}
 nav ul li:after {
     display: block;
     content: ' ';
-    border-bottom: solid 2px #212121;
+    border-bottom: solid 1px #212121;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
     padding: 0 16px;
@@ -124,7 +127,7 @@ footer {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    height: 72px;
+    height: 80px;
     clear: both;
 }
 
