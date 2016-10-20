@@ -78,3 +78,16 @@ h1 {
 .header-image {
     height: calc(100% - 112px);
 }
+
+
+
+/* Index-Main */
+
+main {
+    width: 80%;
+}
+.lisgear-product {
+    float: left;
+    height: 512px;
+    width: 512px;
+}
