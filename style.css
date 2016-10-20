@@ -83,7 +83,65 @@ h1 {
 
 .header-image {
     height: calc(100% - 112px);
-    background: #0b254f url("images/header.jpg") no-repeat center center;
     background-size: cover;
+    background: #0b254f url("images/header.jpg") no-repeat fixed center center;
     position: relative;
 }
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #DDDDDD;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 16px 10%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.social li {
+    float: left;
+    /*noinspection CssNoGenericFontName*/
+    font-family: socicon;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 48px;
+    transition: color 0.1s ease-in-out;
+}
+
+.twitter:hover {
+    color: #4da7de;
+}
+
+.facebook:hover {
+    color: #3e5b98;
+}
+
+.instagram:hover {
+    color: #000000;
+}
+
+.snapchat:hover {
+    color: #fffa37;
+}
+
+.copyright {
+    float: left;
+    line-height: 48px;
+}
+
