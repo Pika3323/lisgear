@@ -20,9 +20,9 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
-    width: 336px;
+    width: 432px;
     position: absolute;
-    left: calc(50% - 168px);
+    left: calc(50% - 216px);
     top: 32px;
 }
 
@@ -32,8 +32,25 @@ nav ul li {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 16px 8px;
+    margin: 0 16px;
     width: 112px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    cursor: pointer;
+}
+nav ul li:after {
+    display: block;
+    content: ' ';
+    border-bottom: solid 2px #212121;
+    transform: scaleX(0);
+    transition: transform 0.1s ease-in-out;
+    padding: 0 16px;
+    margin-top: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+nav ul li:hover:after {
+    transform: scaleX(1);
 }
