@@ -58,22 +58,31 @@ nav ul li {
 .selected {
     font-weight: bold;
 }
-nav ul li:after {
+nav ul li a span{
+    width: auto;
+}
+nav ul li a span:after {
     display: block;
     content: ' ';
     border-bottom: solid 1px #394e70;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
-    padding: 0 16px;
+    width: auto;
 }
-nav ul li:hover:after {
+nav ul li a:hover span:after {
     transform: scaleX(1);
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* Header */
 header {
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(80% - 80px);
 }
 
 h1 {
@@ -89,19 +98,15 @@ h1 {
     font-family: Sanchez, sans-serif;
 }
 
-.header-image {
+.header-content {
     height: calc(100% - 112px);
-    background: #0b254f url("images/header.jpg") no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
+    background: #0b254f url("images/header.jpg") no-repeat fixed center center;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) inset;
 }
 
-
-
 /* Index */
-
 main {
     overflow: hidden;
     padding: 0 10%;
@@ -109,15 +114,28 @@ main {
 }
 #lisgear-products-list{
     margin-top: 50px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
 }
+/* TODO: Resize this so that it looks good, but stays dynamic */
 .lisgear-product {
     float: left;
-    height: 512px;
-    width: 512px;
+    height: auto;
+    width: calc(50% - 64px);
     background: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     list-style: none;
-    margin: 0 50px 50px 50px;
+    box-sizing: border-box;
+    margin: 32px;
+    max-height: 40vw;
+    overflow: hidden;
+}
+
+.lisgear-product img {
+    width: 100%;
 }
 
 /* Footer */
