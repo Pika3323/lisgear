@@ -114,6 +114,7 @@ main {
     float: left;
     height: 512px;
     width: 512px;
+    background: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     list-style: none;
     margin: 0 50px 50px 50px;
@@ -225,5 +226,10 @@ footer {
 
 .copyright {
     float: left;
+    line-height: 48px;
+}
+
+.social-message {
+    float: right;
     line-height: 48px;
 }
