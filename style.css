@@ -121,6 +121,7 @@ main {
     overflow: hidden;
     padding: 0 10%;
     width: 80%;
+    min-height: calc(100% - 192px);
 }
 #lisgear-products-list{
     margin-top: 50px;
