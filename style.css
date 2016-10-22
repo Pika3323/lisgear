@@ -139,6 +139,7 @@ h1 {
     height: calc(100% - 96px);
     background-size: cover;
     background: #0b254f url("images/header.jpg") no-repeat fixed center center;
+    background-size: cover;
     position: relative;
     overflow: hidden;
     margin-top: 96px;
