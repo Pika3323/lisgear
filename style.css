@@ -100,8 +100,8 @@ h1 {
 
 .header-content {
     height: calc(100% - 112px);
-    background-size: cover;
     background: #0b254f url("images/header.jpg") no-repeat fixed center center;
+    background-size: cover;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) inset;
     overflow: hidden;
