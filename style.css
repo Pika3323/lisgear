@@ -148,8 +148,10 @@ h1 {
 main {
     overflow: hidden;
     padding: 0 10%;
-    width: 80%;
-    min-height: calc(100% - 192px);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top:96px;
+    min-height: calc(100% - 176px);
 }
 #lisgear-products-list{
     margin-top: 50px;
