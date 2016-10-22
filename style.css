@@ -82,7 +82,7 @@ nav ul li a {
 /* Header */
 header {
     width: 100%;
-    height: calc(80% - 80px);
+    height: calc(100% - 80px);
 }
 
 h1 {
@@ -104,6 +104,14 @@ h1 {
     background: #0b254f url("images/header.jpg") no-repeat fixed center center;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) inset;
+}
+.photo-credit {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: right;
 }
 
 /* Index */
