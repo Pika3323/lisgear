@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0a2d0d7-84de-4839-b578-a63c6e184b34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="a0a2d0d7-84de-4839-b578-a63c6e184b34" name="Default" comment="" />
     <ignored path="lisgear.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -363,7 +361,7 @@
       <updated>1476924120844</updated>
       <workItem from="1476924122145" duration="7737000" />
       <workItem from="1477014402144" duration="5440000" />
-      <workItem from="1477136039894" duration="10344000" />
+      <workItem from="1477136039894" duration="10488000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1476925336463</created>
@@ -523,7 +521,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23521000" />
+    <option name="totallyTimeSpent" value="23665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
