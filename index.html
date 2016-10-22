@@ -7,27 +7,28 @@
     <meta name="theme-color" content="#EEEEEE">
     <meta name="author" content="Lisgar Collegiate Institute">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="index.html"><span>About</span></a></li>
+            <li><a href="index.html"><span>Card</span></a></li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="index.html"><span>About</span></a></li>
-            </ul>
-        </nav>
         <div class="header-content">
             <div class="header-text">
                 <h1>LisGear</h1>
                 <p>
-                    LisGear is the place to get your Lisgar clothing.
+                    LisGear is Lisgar Collegiate Institute's first ever online store! Thanks to the generous support of Shopify, we are now able to sell Lisgar clothing to students in an easy and convenient fashion. Buy your Lisgar gear now and show your school spirit!
                 </p>
                 <div class="shop-link">
-                    <a href="#shop">
+                    <a href="#home">
                         Shop Now
                     </a>
                 </div>
@@ -36,33 +37,57 @@
         </div>
 
     </header>
-    <main id="shop">
-        <ul id="lisgear-products-list">
-            <li class="lisgear-product" id="crewneck">
-                <a href="crewneck.html">
-                    <img src='images/crewneck.png' alt="images/alternate.png">
-                </a>
-            </li>
-            <li class="lisgear-product" id="sweatpants">
-                <a href="sweatpants.html">
-                    <img src='images/sweatpants.png' alt="images/alternate.png">
-                </a>
-            </li>
-            <li class="lisgear-product">
-                <a href="hoodie.html">
-                    <img src='images/hoodie.png' alt="images/alternate.png">
-                </a>
-            </li>
-            <li class="lisgear-product">
-                <a href="toque.html">
-                    <img src='images/toque.png' alt="images/alternate.png" width="512" height="512">
-                </a>
-            </li>
-        </ul>
+    <main id="home">
+        <section id="products">
+            <h1>Selection</h1>
+            <ul id="lisgear-products-list">
+                <li class="lisgear-product" id="crewneck">
+                    <a href="crewneck.html">
+                        <img src='images/crewneck.png' alt="images/alternate.png">
+                        <div class="product-description">
+                            <div class="title">Crewneck</div>
+                            <div class="price">$ 0.00</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="lisgear-product li-featured" id="hoodie">
+                    <a href="hoodie.html">
+                        <img src='images/hoodie.png' alt="images/alternate.png">
+                        <div class="product-description">
+                            <div class="title">Hoodie</div>
+                            <div class="price">$ 0.00</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="lisgear-product" id="sweatpants">
+                    <a href="sweatpants.html">
+                        <img src='images/sweatpants.png' alt="images/alternate.png">
+                        <div class="product-description">
+                            <div class="title">Sweatpants</div>
+                            <div class="price">$ 0.00</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="lisgear-product">
+                    <a href="toque.html">
+                        <img src='images/toque.png' alt="images/alternate.png">
+                        <div class="product-description">
+                            <div class="title">Toque</div>
+                            <div class="price">$ 0.00</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="bundles"></section>
     </main>
     <footer>
         <div class="copyright">
-            &copy 2016 Lisgar Collegiate Institute
+            &copy 2016 Lisgar Collegiate Institute, Powered by <a href="http://www.shopify.ca">Shopify</a>
         </div>
         <ul class="social">
             <li class="twitter">
