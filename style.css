@@ -99,8 +99,8 @@ nav ul li a {
 /* Header */
 header {
     width: 100%;
-    height: calc(100% - 256px);
-    margin-top: 64px;
+    height: calc(100% - 192px);
+    padding-top: 64px;
 }
 
 header h1 {
@@ -112,13 +112,15 @@ header h1 {
     position: relative;
     width: 100%;
     font-family: Merriweather, serif;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
 }
 
 .header-text p{
-    width: 25%;
+    width: 35%;
     box-sizing: border-box;
     color: #ffffff;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+    font-size: 20px;
 }
 
 .header-text .shop-link {
@@ -142,6 +144,7 @@ header h1 {
     background-size: cover;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .photo-credit {
     position: absolute;
@@ -164,8 +167,15 @@ main {
 main:not(#home) {
     margin-top:96px;
 }
+
+section h1 {
+    font-family: Merriweather, serif;
+    margin: 32px 16px 16px;
+    font-size: 34px;
+
+}
+
 #lisgear-products-list{
-    margin-top: 50px;
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -182,7 +192,6 @@ main:not(#home) {
     list-style: none;
     box-sizing: border-box;
     margin: 16px;
-    max-height: 40vw;
     overflow: hidden;
     transition: box-shadow 0.2s ease-in-out;
 }
@@ -222,7 +231,7 @@ main:not(#home) {
 footer {
     width: 100%;
     background: #DDDDDD;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(11, 37, 79, 0.5);
     padding: 16px 10%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -339,4 +348,89 @@ footer {
     overflow: hidden;
     vertical-align: middle;
     text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-device-width: 480px){
+    main {
+        padding: 0;
+    }
+
+    #lisgear-products-list {
+        margin: 0;
+    }
+
+    .lisgear-product {
+        width: calc(100% - 32px);
+        margin: 8px 16px;
+    }
+
+    .lisgear-product:first-child {
+        margin: 16px 16px 8px;
+    }
+
+    .lisgear-product:last-child {
+        margin: 8px 16px 16px;
+    }
+
+    .header-text {
+        top: 0;
+        padding: 0;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .header-text p {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 32px;
+    }
+
+    section h1 {
+        text-align: center;
+    }
+
+    .photo-credit {
+        width: 100%;
+        text-align:center;
+        left: 0;
+    }
+
+    header {
+        height: calc(100% - 64px);
+    }
+
+    footer {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .copyright {
+        float: left;
+        line-height: 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social {
+        float: left;
+        width: 100%;
+    }
+
+    .social li {
+        width: 25%;
+    }
+
+    .social-message {
+        display: none;
+    }
+    .no-mobile {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }
