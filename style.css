@@ -101,6 +101,7 @@ nav ul li a {
 .wrapper {
     position: relative;
     min-height: 100%;
+    margin-top: 96px;
 }
 
 .cart {
@@ -211,9 +212,6 @@ main {
     width: 100%;
     box-sizing: border-box;
     min-height: calc(100% - 192px);
-}
-main:not(#home) {
-    margin-top:96px;
 }
 section h1 {
     margin-left: 16px;
