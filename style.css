@@ -429,6 +429,7 @@ footer {
 .product-information {
     display: block;
     margin-top: 64px;
+    font-size: 20px;
 }
 .combo-images {
     height: 514px; /* it's a little bit larger here to show the shadow of some of the larger li's */
