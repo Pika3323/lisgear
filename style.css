@@ -107,6 +107,7 @@ nav ul li a {
 .wrapper {
     position: relative;
     min-height: 100%;
+    margin-top: 96px;
 }
 
 .cart {
@@ -226,9 +227,6 @@ main {
     min-height: calc(100% - 192px);
     position: relative;
 }
-main:not(#home) {
-    margin-top:96px;
-}
 section h1 {
     margin-left: 16px;
     font-size: 34px;
@@ -240,6 +238,17 @@ section h1 {
     position: relative;
     padding: 0;
     margin: 0;
+}
+#lisgear-bundles-list{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+#lisgear-bundles-list img{
+    display: inline-block;
 }
 .lisgear-product {
     float: left;
@@ -523,6 +532,10 @@ footer {
     }
 
     #lisgear-products-list {
+        margin: 0;
+    }
+
+    #lisgear-bundles-list{
         margin: 0;
     }
 
