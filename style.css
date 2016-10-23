@@ -11,7 +11,6 @@ body {
 html {
     width: 100%;
     height: 100%;
-    margin: 0;
 }
 
 ::selection {
@@ -47,6 +46,7 @@ nav {
     left: 0;
     background: #eeeeee;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 0 10%;
 }
 
 nav ul {
@@ -63,11 +63,10 @@ nav ul li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 16px 8px;
     margin: 0 16px;
     width: 124px;
     height: 64px;
-    line-height: 32px;
+    line-height: 64px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -97,6 +96,33 @@ nav ul li a {
     height: 100%;
 }
 
+.cart {
+    float: right;
+    line-height: 64px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 64px;
+    box-sizing: border-box;
+    margin-top: -2px;
+}
+
+/*noinspection CssNoGenericFontName*/
+.cart:before {
+    content:'\E8CC';
+    font-family: Material Icons;
+    position: relative;
+    top: 2px;
+}
+
+.cart:after {
+    content: attr(data-items);
+    font-weight: bold;
+}
+
 /* Header */
 header {
     width: 100%;
@@ -112,7 +138,10 @@ header h1 {
     height: 112px;
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     font-family: Merriweather, serif;
+=======
+>>>>>>> 5e5ad2ff49a46ef886998ec5ff6f9432b3cc6fe4
 }
 
 .header-text p{
@@ -183,7 +212,6 @@ main:not(#home) {
     list-style: none;
     box-sizing: border-box;
     margin: 16px;
-    max-height: 40vw;
     overflow: hidden;
     transition: box-shadow 0.2s ease-in-out;
 }
@@ -230,7 +258,6 @@ footer {
     box-sizing: border-box;
     height: 80px;
     clear: both;
-
 }
 
 .social {
@@ -325,32 +352,22 @@ footer {
 }
 
 /* product display pages */
-.wrapper {
-	min-height: 100%;
-	position: relative;
-}
-.wrapper footer {
-	position: absolute;
-    bottom: 0;
-    left: 0;
-}
 .product-display-section {
 	width: 100%;
-	height: 100%;
-	margin-top: 32px;
-}
-.product-display-section h1{
-	color: #212121;
+	height: auto;
 }
 .product-image {
-	float: left;
+	left: 0;
+    height: auto;
     width: calc(50% - 64px);
     background: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     box-sizing: border-box;
-    margin: 0;
+    margin: 32px;
+    max-height: 40vw;
     overflow: hidden;
     vertical-align: middle;
+    text-align: center;
 }
 .product-image img{
 	width: 100%;
@@ -405,3 +422,99 @@ footer {
     width: 100%;
     max-height: 100%;
 }
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-device-width: 480px){
+    nav {
+        padding: 0 16px;
+    }
+    nav ul {
+        left: 0;
+    }
+    nav ul li {
+        margin: 0;
+        width: 96px;
+    }
+    main {
+        padding: 0;
+    }
+
+    #lisgear-products-list {
+        margin: 0;
+    }
+
+    .lisgear-product {
+        width: calc(100% - 32px);
+        margin: 8px 16px;
+    }
+
+    .lisgear-product:first-child {
+        margin: 16px 16px 8px;
+    }
+
+    .lisgear-product:last-child {
+        margin: 8px 16px 16px;
+    }
+
+    .header-text {
+        top: 0;
+        padding: 0;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .header-text p {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 32px;
+    }
+
+    section h1 {
+        text-align: center;
+    }
+
+    .photo-credit {
+        width: 100%;
+        text-align:center;
+        left: 0;
+    }
+
+    header {
+        height: calc(100% - 64px);
+    }
+
+    footer {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .copyright {
+        float: left;
+        line-height: 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social {
+        float: left;
+        width: 100%;
+    }
+
+    .social li {
+        width: 25%;
+    }
+
+    .social-message {
+        display: none;
+    }
+    .no-mobile {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+>>>>>>> 5e5ad2ff49a46ef886998ec5ff6f9432b3cc6fe4
