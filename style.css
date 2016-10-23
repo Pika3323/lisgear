@@ -556,13 +556,19 @@ footer {
         top: 0;
         padding: 0;
         text-align: center;
-        margin-top: 32px;
+        -webkit-clip-path: circle(80% at 50% 0);
+        width: 100%;
     }
 
     .header-text p {
         width: 100%;
         box-sizing: border-box;
         padding: 0 32px;
+    }
+
+    .shop-link {
+        position: absolute;
+        left: calc(50% - 59px);
     }
 
     section h1 {
