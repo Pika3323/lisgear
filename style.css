@@ -44,9 +44,10 @@ nav {
     z-index: 15;
     top: 0;
     left: 0;
-    background: #eeeeee;
+    background: #394e70;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 0 10%;
+    color: #ffffff;
 }
 
 nav ul {
@@ -81,10 +82,11 @@ nav ul li a span{
 nav ul li a span:after {
     display: block;
     content: ' ';
-    border-bottom: solid 1px #394e70;
+    border-bottom: solid 1px #ffffff;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
     width: auto;
+    margin-top: -16px;
 }
 nav ul li a:hover span:after {
     transform: scaleX(1);
