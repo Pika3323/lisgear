@@ -44,9 +44,10 @@ nav {
     z-index: 15;
     top: 0;
     left: 0;
-    background: #eeeeee;
+    background: #394e70;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 0 10%;
+    color: #ffffff;
 }
 
 nav ul {
@@ -81,10 +82,11 @@ nav ul li a span{
 nav ul li a span:after {
     display: block;
     content: ' ';
-    border-bottom: solid 1px #394e70;
+    border-bottom: solid 1px #ffffff;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
     width: auto;
+    margin-top: -16px;
 }
 nav ul li a:hover span:after {
     transform: scaleX(1);
@@ -133,37 +135,55 @@ header {
     width: 100%;
     height: calc(100% - 256px);
     margin-top: 64px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 header h1 {
     margin: 0;
     font-size: 85px;
     font-weight: 400;
-    color: #ffffff;
+    color: #3e5b98;
     height: 112px;
     position: relative;
     width: 100%;
 }
 
 .header-text p{
-    width: 25%;
+    width: 60%;
     box-sizing: border-box;
-    color: #ffffff;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+    color: #3e5b98;
 }
 
 .header-text .shop-link {
-    width: 100%;
     color: #ffffff;
+    padding: 8px 16px;
+    background: #3e5b98;
+    width: 86px;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.header-text .shop-link:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.header-text .shop-link:active {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .header-text {
-    height: 35%;
-    width: 100%;
-    padding: 0 10%;
-    top: 32.5%;
+    height: 100%;
+    width: 60%;
+    padding: 20vh 32px 0 10%;
     text-align: left;
     position: absolute;
+    box-sizing: border-box;
+    background: rgba(238, 238, 238, 0.97);
+    -webkit-clip-path: circle(100% at 0 0);
+    clip-path: circle(100% at 0 0);
 }
 
 .header-content {
@@ -190,20 +210,23 @@ main {
     padding: 0 10%;
     width: 100%;
     box-sizing: border-box;
-    min-height: calc(100% - 176px);
+    min-height: calc(100% - 192px);
 }
 main:not(#home) {
     margin-top:96px;
 }
+section h1 {
+    margin-left: 16px;
+    font-size: 34px;
+}
 #lisgear-products-list{
-    margin-top: 50px;
     width: 100%;
     height: auto;
     overflow: hidden;
     position: relative;
     padding: 0;
+    margin: 0;
 }
-/* TODO: Resize this so that it looks good, but stays dynamic */
 .lisgear-product {
     float: left;
     height: auto;
@@ -447,7 +470,7 @@ footer {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     list-style: none;
     box-sizing: border-box;
-    margin: 0px 32px 0 32px;
+    margin: 0 32px 0 32px;
     max-height: 512px;
     overflow: hidden;
 }
@@ -460,7 +483,7 @@ footer {
     display: none;
 }
 
-@media only screen and (max-device-width: 480px){
+@media only screen and (max-width: 480px){
     nav {
         padding: 0 16px;
     }
@@ -550,4 +573,3 @@ footer {
         display: block;
     }
 }
->>>>>>> 5e5ad2ff49a46ef886998ec5ff6f9432b3cc6fe4
