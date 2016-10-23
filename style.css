@@ -395,8 +395,22 @@ footer {
 .product-information-and-add-to-cart label {
     display: block;
     margin-bottom: 8px;
+    margin-top: 16px;
 }
-#add-to-cart {
+.quantity{
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0 16px 0 10px;
+    width: 64px;
+    height: 32px;
+    font-size: 15px;
+    font-family: Roboto, serif;
+}
+.size-selector{
+    font-family: Roboto, serif;
+    border-radius: 2px;
+}
+.add-to-cart {
     margin-top: 32px;
     padding: 0;
     display: block;
@@ -411,6 +425,10 @@ footer {
     height: 32px;
     border-radius: 2px;
     cursor: pointer;
+}
+.product-information {
+    display: block;
+    margin-top: 64px;
 }
 .combo-images {
     height: 514px; /* it's a little bit larger here to show the shadow of some of the larger li's */
