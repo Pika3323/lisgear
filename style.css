@@ -448,7 +448,7 @@ footer {
     margin-bottom: 8px;
     margin-top: 16px;
 }
-.quantity{
+#quantity{
     border: 1px solid #ddd;
     border-radius: 2px;
     padding: 0 16px 0 10px;
@@ -457,9 +457,15 @@ footer {
     font-size: 15px;
     font-family: Roboto, serif;
 }
-.size-selector{
+#size-selector{
     font-family: Roboto, serif;
     border-radius: 2px;
+    width: 64px;
+    height: 32px;
+    background-color: #394e70;
+    border: 0;
+    color: white;
+    font-size: 20px;
 }
 .add-to-cart {
     margin-top: 32px;
