@@ -21,14 +21,22 @@
                 <div class="product-image">
                     <img src="images/toque.png">
                 </div>
-                <div class="product-information">
+                <div class="product-title">
                     <h1>LisGear Toque</h1>
                 </div>
-                <div class="product-information-and-purchase">
+                <div class="product-information-and-add-to-cart">
+                    <h2>$ 0.00 </h2>
+                    <form action="/cart/add" method="post" enctype="multipart/form-data" class="add-to-cart-form">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                        <button type="submit" name="add" id="add-to-cart" class="btn">
+                            <span id="add-to-cart-text">Add to Cart</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="special-products-footer">
             <div class="copyright">
                 &copy 2016 Lisgar Collegiate Institute
             </div>
