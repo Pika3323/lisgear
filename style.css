@@ -46,6 +46,7 @@ nav {
     left: 0;
     background: #eeeeee;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 0 10%;
 }
 
 nav ul {
@@ -62,11 +63,10 @@ nav ul li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 16px 8px;
     margin: 0 16px;
     width: 124px;
     height: 64px;
-    line-height: 32px;
+    line-height: 64px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -94,6 +94,33 @@ nav ul li a {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.cart {
+    float: right;
+    line-height: 64px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 64px;
+    box-sizing: border-box;
+    margin-top: -2px;
+}
+
+/*noinspection CssNoGenericFontName*/
+.cart:before {
+    content:'\E8CC';
+    font-family: Material Icons;
+    position: relative;
+    top: 2px;
+}
+
+.cart:after {
+    content: attr(data-items);
+    font-weight: bold;
 }
 
 /* Header */
@@ -344,6 +371,16 @@ footer {
 }
 
 @media only screen and (max-device-width: 480px){
+    nav {
+        padding: 0 16px;
+    }
+    nav ul {
+        left: 0;
+    }
+    nav ul li {
+        margin: 0;
+        width: 96px;
+    }
     main {
         padding: 0;
     }
