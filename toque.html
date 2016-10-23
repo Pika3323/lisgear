@@ -5,8 +5,7 @@
     <title>Lisgear</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
-    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -15,6 +14,9 @@
                 <li><a href="index.html"><span>Home</span></a></li>
                 <li><a href="index.html"><span>About</span></a></li>
             </ul>
+            <div class="cart" data-items="5">
+                Cart
+            </div>
         </nav>
         <main>
             <div class="product-display-section">
@@ -26,14 +28,15 @@
                 </div>
                 <div class="product-information-and-add-to-cart">
                     <h2>$ 0.00 </h2>
+                    <!--suppress HtmlUnknownTarget -->
                     <form action="/cart/add" method="post" enctype="multipart/form-data" class="add-to-cart-form">
                         <label for="quantity">Quantity</label>
-                        <input type="number" class="quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" class="quantity-selector">
                         <label for="size-selector">Size</label>
-                        <select name="size" class="size-selector">
+                        <select name="size" id="size-selector">
                             <option value="notapplicable">N/A</option>
                         </select>
-                        <button type="submit" name="add" class="add-to-cart" class="btn">
+                        <button type="submit" name="add" class="add-to-cart">
                             <span id="add-to-cart-text">Add to Cart</span>
                         </button>
                     </form>
