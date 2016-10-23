@@ -138,10 +138,6 @@ header h1 {
     height: 112px;
     position: relative;
     width: 100%;
-<<<<<<< HEAD
-    font-family: Merriweather, serif;
-=======
->>>>>>> 5e5ad2ff49a46ef886998ec5ff6f9432b3cc6fe4
 }
 
 .header-text p{
@@ -357,7 +353,7 @@ footer {
 	height: auto;
 }
 .product-image {
-	left: 0;
+	float: left;
     height: auto;
     width: calc(50% - 64px);
     background: #fff;
